@@ -442,7 +442,12 @@ img {
         height: 130%;
     }
 }
-
+@media (max-width: 991px) {
+    .bg-shape {
+        height: 130%;
+        background: linear-gradient(-47deg, #f8f9fa 0%, rgb(220, 216, 240) 100%);
+    }
+}
 /*SHAPE DIVIDER*/
 .shape-bottom {
     position: absolute;
@@ -504,6 +509,7 @@ img {
 .benifits-item:after {
     background: linear-gradient(-47deg, #8731E8 0%, #4528DC 100%);
 }
+
 
 /*SOCIAL ICONS*/
 .social-icons > a {
@@ -976,6 +982,12 @@ img {
 
     .download-page .welcome-intro p {
         font-size: 16px;
+    }
+}
+
+@media (max-width: 767px) {
+    .welcome-thumb {
+        display: none;
     }
 }
 

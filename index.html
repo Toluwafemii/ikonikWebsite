@@ -25,6 +25,31 @@
 </head>
 
 <body class="homepage">
+
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v6.0'
+        });
+      };
+
+      (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Your customer chat code -->
+    <div class="fb-customerchat"
+      attribution=setup_tool
+      page_id="105749367748321"
+theme_color="#7646ff">
+    </div>
     
     <!--====== Scroll To Top Area Start ======-->
     <div id="scrollUp" title="Scroll To Top">
@@ -38,7 +63,7 @@
             <div class="container position-relative">
                 <a class="navbar-brand" href="index.html">
                     <img class="navbar-brand-regular" src="assets/img/logo/logo.png" alt="brand-logo">
-                    <img class="navbar-brand-sticky" src="assets/img/logo/logo.png" alt="sticky brand-logo">
+                    <!--<img class="navbar-brand-sticky" src="assets/img/logo/logo.png" alt="sticky brand-logo">-->
                 </a>
                 <button class="navbar-toggler d-lg-none" type="button" data-toggle="navbarToggler" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -511,15 +536,15 @@
                                 <p class="mt-2 mb-3">Connect with us on social</p>
                                 <!-- Social Icons -->
                                 <div class="social-icons d-flex">
-                                    <a class="facebook" href="#">
+                                    <a class="facebook" href="https://www.facebook.com/ikonikca">
                                         <i class="fab fa-facebook-f"></i>
                                         <i class="fab fa-facebook-f"></i>
                                     </a>
-                                    <a class="twitter" href="#">
+                                    <!--<a class="twitter" href="#">
                                         <i class="fab fa-twitter"></i>
                                         <i class="fab fa-twitter"></i>
-                                    </a>
-                                    <a class="google-plus" href="#">
+                                    </a>-->
+                                    <a class="google-plus" href="https://www.instagram.com/ikonik.ca">
                                         <i class="fab fa-instagram"></i>
                                         <i class="fab fa-instagram"></i>
                                     </a>
@@ -533,7 +558,6 @@
                                 <h3 class="footer-title mb-2">Useful Links</h3>
                                 <ul>
                                     <li class="py-2"><a href="index.html">Home</a></li>
-                                    <li class="py-2"><a href="contact.html">Contact</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -545,7 +569,6 @@
                                 <ul>
                                     <li class="py-2"><a href="privacy.html">Privacy Policy</a></li>
                                     <li class="py-2"><a href="termsAndconditions.html">Terms &amp; Conditions</a></li>
-                                    <li class="py-2"><a href="contact.html">Contact</a></li>
                                 </ul>
                             </div>
                         </div>
